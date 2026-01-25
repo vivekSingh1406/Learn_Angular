@@ -1,0 +1,7 @@
+what & why NGRX ?
+----------------------------
+=> NGRX is a a library for state management in angular
+- there is two type of state management
+    1. Local/component lavel state
+    2. Gobal/application lavel state
+- Library like NGRS, NGRX are inspired bu redux pattern 
