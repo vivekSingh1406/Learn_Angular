@@ -85,3 +85,13 @@ ngClass Directive
 dynamically, based on some TypeScript expression
 1 - The ngClass directive is used to set a CSS class dynamically on an HTML element based on a given TypeScript expression
 2 - The ngClass directive is an attribute directive. it changes the look or behavior of an HTML element
+
+
+
+
+what is View Encapsulation?
+-------------------------------------
+
+=> Encapsulation means hiding data and behavior from outside world
+"The view Encapsulation is a concept or behavior in angular, where component CSS style are encapsulated into the components 
+view and do not effect the rest of the application"
