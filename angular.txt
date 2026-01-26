@@ -5,3 +5,83 @@ what & why NGRX ?
     1. Local/component lavel state
     2. Gobal/application lavel state
 - Library like NGRS, NGRX are inspired bu redux pattern 
+
+
+What is Data Binding
+-----------------------------
+=> Data Binding is a mechanism for binding data values to HTML/View. it allows us to define communication b/w the component and view
+    -- OR --
+   Data Binding is angular allows us to communication between a Component class and its corresponding view template
+   In a Angular, we have two way data binding
+
+
+
+1 - One Way Data Binding
+-----------------------------
+=> One way data binding is when we can access a component class Property in its corresponding view template
+
+Exam:-
+(Data flow from component to class view template)
+ComponentClass ----------> View Template(HTML)
+
+- String Interpolation : {{data}}
+- Property binding: [property] = data
+
+
+(Data flow from view template to component class)
+ComponentClass ----------> View Template(HTML)
+=>  Event Binding allows us to bind webpage events to a components property or method. using event binding we can pass data from view to component.
+
+- Event binding: (data)= "expression"
+
+
+- Component to View(Interpolation Binging, Property Binging)
+- View to Component(Eent Binding)
+
+
+
+
+2 - Two Way Data Binding
+-----------------------------
+=> Two way data binding binds data from component class to view template and view template to component class. This is a combination of property binding and event binding.
+
+Exam:-
+(Data flow from component class to view template and view template to component class)
+ComponentClass ----------> View Template(HTML)
+
+
+- Component to View, View to Component
+
+
+what is Directive
+----------------------------
+=> Directives are simply an instruction to the DOM
+
+Types of directive
+1 - Structural directive :- Change the view of a webpage by adding or removing DOM element from a webpage.
+2 - Attribute directive :- Used like an attribute on a existing webpage element to change its look and behaviour.
+
+
+
+
+ngIf Directives
+-----------------------
+=> Angular ngIf Directives is a structural Directive that is used to completely add to remove a dom element from the
+    webpage based on a given condition
+1 - The ngIf directive is used to add or remove a DOM element from the webpage based on a given condition.
+2 - The ngIf directive is a structural directive. it manipulated the DOM by adding/removing element from the DOM
+
+
+ngStyle Directive
+-----------------------
+=> the ngStyle directive is an attribute directive which allows us to set many inline style of an HTML element using expression
+1 - The ngStyle directive is used to set a CSS style dynamically on an HTML element based on a given TypeScript expression
+2 - The ngStyle directive is an attribute directive. it changes the looks or behavior of an HTML element
+
+
+ngClass Directive
+-----------------------
+=> The ngClass Directive is an attribute Directive, which allows us to add or remove css classes to or from an HTML element 
+dynamically, based on some TypeScript expression
+1 - The ngClass directive is used to set a CSS class dynamically on an HTML element based on a given TypeScript expression
+2 - The ngClass directive is an attribute directive. it changes the look or behavior of an HTML element

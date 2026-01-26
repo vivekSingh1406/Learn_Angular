@@ -1509,3 +1509,45 @@ For interviews, know well:
 ---
 
 **Good luck with your interview! Remember, the best interview is the one where you're being yourself while showing your expertise. You've got this!** 🎉
+
+
+
+1️⃣ Components & Templates
+
+Component lifecycle (ngOnInit), Data binding, {{ }}, [ ], ( ), [( )], @Input() / @Output()
+
+2️⃣ Directives
+
+*ngIf, *ngFor, *ngSwitch, ngClass, ngStyle
+
+3️⃣ Services & Dependency Injection
+
+@Injectable(), Singleton services, DI hierarchy
+
+4️⃣ Routing
+
+RouterModule, router-outlet, routerLink, Route params, Lazy loading, Route guards
+
+5️⃣ Forms (VERY IMPORTANT)
+
+Reactive Forms, FormControl, FormGroup, FormArray, Validators
+
+6️⃣ HTTP & API
+
+HttpClient, REST APIs (GET/POST/PUT/DELETE), Error handling, Interceptors
+
+7️⃣ RxJS
+
+Observable vs Promise, subscribe, pipe, map, switchMap, catchError, debounceTime
+
+8️⃣ State Management
+
+Service-based state, NgRx basics (Store, Action, Reducer, Effect)
+
+9️⃣ Angular Signals (Angular 16+)
+
+signal(), computed(), effect()
+
+🔟 Performance Basics
+
+OnPush, trackBy, Unsubscribe (takeUntil)
