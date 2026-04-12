@@ -50,7 +50,7 @@ Exam:-
 ComponentClass ----------> View Template(HTML)
 
 
-- Component to View, View to Component
+- Component to View, View to Componenta
 
 
 what is Directive
@@ -95,3 +95,97 @@ what is View Encapsulation?
 => Encapsulation means hiding data and behavior from outside world
 "The view Encapsulation is a concept or behavior in angular, where component CSS style are encapsulated into the components 
 view and do not effect the rest of the application"
+
+
+
+# 📦 Angular Project Files (Simple Explanation)
+
+## package.json
+
+* Project information (name, version)
+* Commands (start, build, test)
+* Dependencies & devDependencies
+
+---
+
+## package-lock.json
+
+* Locks dependency versions
+* Auto-generated (do not edit)
+
+---
+
+## node_modules/
+
+* Contains all installed packages
+* Created using `npm install`
+
+---
+
+## angular.json ⭐
+
+* Main Angular configuration file
+* Controls build, assets, environments
+
+---
+
+## tsconfig.json
+
+* TypeScript settings (ES version, compiler options)
+
+---
+
+## tsconfig.app.json
+
+* Configuration for main app
+
+---
+
+## tsconfig.spec.json
+
+* Configuration for testing
+
+---
+
+## README.md
+
+* Project documentation
+* How to run and build
+
+---
+
+## src/ (Main Folder)
+
+### index.html
+
+* Entry HTML file
+* Loads Angular app
+
+### main.ts
+
+* Starts Angular application
+
+### styles.css
+
+* Global CSS (used everywhere)
+
+### assets/
+
+* Images, fonts, static files
+
+### app/
+
+* Main code (components, services, modules)
+
+---
+
+# ✅ Short Summary
+
+* `package.json` → project + dependencies
+* `angular.json` → Angular settings
+* `src/` → main code
+* `main.ts` → start app
+* `index.html` → entry point
+* `styles.css` → global style
+
+---
