@@ -30,12 +30,6 @@ Angular is a frontend framework, so it does not directly interact with databases
 - Update existing data
 - Delete records
 
-### 📌 Real-world Examples:
-- Login system  
-- Fetch user list  
-- Submit form data  
-- Update profile  
-
 ---
 
 ## 🔹 3. What is a REST API?
