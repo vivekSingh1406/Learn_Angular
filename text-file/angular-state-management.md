@@ -51,8 +51,8 @@
 
 ### Problem 1 — Props Drilling
 
-Passing data through many unnecessary component layers.
-Even intermediate components that don't need  the data must pass it along. Code becomes messy, hard to maintain, and tightly coupled.
+> Passing data through many unnecessary component layers.
+> Even intermediate components that don't need  the data must pass it along. Code becomes messy, hard to maintain, and tightly coupled.
 
 ```
 App → Dashboard → Sidebar → Profile → Avatar
@@ -100,7 +100,6 @@ Components depend directly on each other — changing one breaks others.
 
 ## 3. What is NgRx?
 
-> **NgRx = Angular + RxJS + Redux pattern**
 > NgRx is a reactive state management library for Angular, built on RxJS Observables.
 
 It keeps all application state in a **single immutable Store** and enforces a strict unidirectional data flow:
@@ -543,8 +542,6 @@ src/app/
 
 ### Q1: What is State Management and why is it needed in Angular?
 
-**Answer:**
-
 State management is a pattern for storing, updating, and sharing application data in a controlled, predictable way. Without it, data is scattered across components and services, leading to:
 
 - Props drilling through unnecessary layers
@@ -557,13 +554,9 @@ State management is a pattern for storing, updating, and sharing application dat
 - Async operations (HTTP) need to update shared state
 - Application grows and developers need a standard, debuggable pattern
 
-Solutions range from `BehaviorSubject` (simple apps) to NgRx (complex enterprise apps).
-
 ---
 
 ### Q2: Explain NgRx's unidirectional data flow with a real-world example.
-
-**Answer:**
 
 NgRx enforces one-way data flow — state can only move forward through defined steps.
 
@@ -584,8 +577,6 @@ No component communicates directly with another — all communication goes throu
 
 ### Q3: What is the difference between switchMap, mergeMap, concatMap, and exhaustMap in Effects?
 
-**Answer:**
-
 | Operator | Behaviour | Use Case |
 |---|---|---|
 | `switchMap` | Cancels previous request when new fires | Search typeahead, load data |
@@ -598,8 +589,6 @@ No component communicates directly with another — all communication goes throu
 ---
 
 ### Q4: How does memoization in NgRx selectors improve performance?
-
-**Answer:**
 
 `createSelector` creates a memoized function. It stores the last input values and last computed result. The projector function re-runs **only when its input selectors return a new reference**.
 
@@ -617,8 +606,6 @@ Without memoization: filter + sort runs on **every state change**, even unrelate
 ---
 
 ### Q5: Why must reducers be pure functions? What breaks if they are not?
-
-**Answer:**
 
 **Pure function requirements:**
 - Same inputs always produce the same output
@@ -640,8 +627,6 @@ Without memoization: filter + sort runs on **every state change**, even unrelate
 
 ### Q6: What is the difference between NgRx Store and ComponentStore?
 
-**Answer:**
-
 | Feature | NgRx Global Store | ComponentStore |
 |---|---|---|
 | Scope | App-wide, shared by all | Local to one component/service instance |
@@ -662,8 +647,6 @@ this.usersStore.setLoading(true);
 ---
 
 ### Q7: How do you handle loading and error states in NgRx? Show the full pattern.
-
-**Answer:**
 
 Standard pattern — always model **3 states**: loading, success, error.
 
@@ -697,8 +680,6 @@ This pattern ensures UI always knows exactly what state the data fetch is in.
 ---
 
 ### Q8: How do you test NgRx — Actions, Reducers, Selectors, and Effects?
-
-**Answer:**
 
 Each NgRx piece is tested differently:
 
@@ -738,8 +719,6 @@ effects.loadUsers$.subscribe(action => {
 
 ### Q9: What is @ngrx/entity and when should you use it?
 
-**Answer:**
-
 `@ngrx/entity` provides `EntityAdapter` — a utility for managing collections of entities (normalized state). Instead of an array, it stores:
 
 ```ts
@@ -773,8 +752,6 @@ Adapter also **auto-generates selectors**: `selectAll`, `selectEntities`, `selec
 ---
 
 ### Q10: How do you avoid memory leaks when using NgRx Store in components?
-
-**Answer:**
 
 **1. `async` pipe (ALWAYS PREFERRED):**
 ```ts
@@ -812,8 +789,6 @@ this.store.select(selectUser)
 
 ### Q11: How would you structure NgRx in a large enterprise Angular application?
 
-**Answer:**
-
 Feature-based structure with lazy loading:
 
 ```
@@ -850,8 +825,6 @@ src/app/
 
 ### Q12: What is optimistic UI update in NgRx? Implement it.
 
-**Answer:**
-
 Optimistic UI updates state **immediately** before the server confirms, then rolls back on failure. This gives instant user feedback.
 
 ```ts
@@ -884,8 +857,6 @@ likePost$ = createEffect(() =>
 ---
 
 ### Q13: How do you handle NgRx state persistence across browser refresh?
-
-**Answer:**
 
 NgRx state is in-memory — browser refresh clears it. Three strategies:
 
@@ -924,21 +895,5 @@ rehydrate$ = createEffect(() =>
 > ⚠️ **Security:** Never persist sensitive data (auth tokens) in localStorage. Use secure HttpOnly cookies instead.
 
 ---
-
-## 📋 Quick Reference Cheat Sheet
-
-```
-DISPATCH   →  store.dispatch(actionCreator({ payload }))
-READ       →  store.select(selectorFn)
-ACTION     →  createAction('[Source] Event', props<{ data: Type }>())
-REDUCER    →  createReducer(initialState, on(action, (state, { payload }) => ({ ...state, payload })))
-EFFECT     →  createEffect(() => actions$.pipe(ofType(action), switchMap(() => api$.pipe(map(success), catchError(failure)))))
-SELECTOR   →  createSelector(inputSelector, projectorFn)
-FEATURE    →  createFeatureSelector<FeatureState>('featureKey')
-```
-
----
-
-*Angular State Management — NgRx Complete Guide | 5+ Years Interview Preparation*
 
 
