@@ -126,3 +126,16 @@ ehthumbs.db
 
 
 
+// Java specific (if applicable)
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.idea/
+.mvn/
+.gradle/
+target/
+.mvn/

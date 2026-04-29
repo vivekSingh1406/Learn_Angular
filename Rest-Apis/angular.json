@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": false
+    "analytics": "671c6b55-e166-4e8c-a456-533d3e18c792"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "State-management-ngrx": {
+    "Rest-Apis": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "State-management-ngrx:build:production"
+              "buildTarget": "Rest-Apis:build:production"
             },
             "development": {
-              "buildTarget": "State-management-ngrx:build:development"
+              "buildTarget": "Rest-Apis:build:development"
             }
           },
           "defaultConfiguration": "development"
