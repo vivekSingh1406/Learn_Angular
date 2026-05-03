@@ -2,8 +2,7 @@
 ## 1. What is Component in Angular?
 
 A Component is the fundamental building block of an Angular application. In Angular, everything you see on the screen is made using components.
-
-Examples- Navbar, Sidebar, Login Form, Registration Form, Product Card, Dashboard, Footer, User Profile, Header
+Examples - Navbar, Sidebar, Login Form, Registration Form, Product Card, Dashboard, Footer, User Profile, Header
 ---
 
 ## Real-Life Understanding
