@@ -76,7 +76,6 @@ Angular updates only required components instead of reloading the entire page. T
 ## 3. How to Create Component?
 
 Angular CLI provides commands to generate components automatically.
-Create Component
 
 ```bash
 ng generate component component_name
@@ -106,7 +105,7 @@ It tells Angular:
 - What CSS to use
 - What selector to use
 
-## How Angular Uses @Component?
+#### How Angular Uses @Component?
 
 When Angular application starts:
 
@@ -114,10 +113,6 @@ When Angular application starts:
 2. Reads metadata
 3. Creates component
 4. Renders UI
-
----
-
-### Syntax
 
 ```ts
 @Component({
@@ -129,10 +124,9 @@ When Angular application starts:
 ---
 
 
-## 1. How to Declare Variable / State in Component?
+## 5. How to Declare Variable / State in Component?
 
 In Angular, variables are declared inside the component class. Angular uses TypeScript, so variables are declared using TypeScript syntax.
-
 
 These variables store:
 - Data
@@ -143,7 +137,7 @@ These variables store:
 ---
 
 
-## 2. What is Data Binding?
+## 6. What is Data Binding?
 
 Data binding is a technique used in frameworks like Angular to connect your application data (component) with the user interface (HTML view) ** It keeps your data and UI in sync automatically.**
 
@@ -151,8 +145,7 @@ It allows communication between:
 - UI and Component
 - Component and UI
 
-## Why Data Binding is Important?
-
+### Why Data Binding is Important?
 
 Without data binding:
 - You would manually update the UI when data changes
@@ -162,7 +155,7 @@ With data binding:
 - Changes in data reflect in UI automatically
 - User actions update data automatically
 
-## One-Way Data Binding
+### One-Way Data Binding
 Data flows in one direction only — either from component → view or view → component.
 
 1. Interpolation ({{ }})
@@ -177,7 +170,7 @@ Also component → view.
 Sends data from the view to the component when an event occurs.
 view → component
 
-## Two-Way Data Binding
+### Two-Way Data Binding
 Data flows both ways (component ↔ view).
 
 Using ngModel
@@ -186,13 +179,13 @@ Requires importing FormsModule
 
 ---
 
-## 4 What is interpolation & how to use interpolation in angular ?
+## 7 What is interpolation & how to use interpolation in angular ?
 
 Interpolation means binding data from the component to the view (HTML) using double curly braces. The expression inside {{ }} is evaluated by Angular, and its result is displayed in the UI.
 
 
 
-## 1 What is Directive ?
+## 8 What is Directive ?
 
 A Directive in Angular is a special instruction that helps Angular modify the behavior, appearance, or structure of HTML elements. Directives are one of the most important features of Angular because they make web pages dynamic.
 
@@ -203,7 +196,7 @@ Using directives, we can:
 - Add custom behavior
 - Manipulate DOM easily
 
-# Why Directives Are Important ?
+### Why Directives Are Important ?
 
 Without directives:
 - Web pages become static
