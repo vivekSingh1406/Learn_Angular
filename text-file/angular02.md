@@ -666,22 +666,22 @@ Benefits of RouterLink
 
 
 ---
-# Interview Questions
+## Interview Questions
 ---
 
-## 1. What is Component in Angular?
+### 1. What is Component in Angular?
 
 A component is the basic building block of Angular applications that controls part of the UI.
 
 ---
 
-## 2. What is selector?
+### 2. What is selector?
 
 Selector is a custom HTML tag used to render a component.
 
 ---
 
-## 3. Difference between template and templateUrl?
+### 3. Difference between template and templateUrl?
 
 | template | templateUrl |
 |---|---|
@@ -689,7 +689,7 @@ Selector is a custom HTML tag used to render a component.
 
 ---
 
-## 4. Why Components are Important?
+### 4. Why Components are Important?
 
 Components help in:
 - Reusability
@@ -699,13 +699,13 @@ Components help in:
 
 ---
 
-## 5. What is Data Binding?
+### 5. What is Data Binding?
 
 Data binding connects component data with HTML template.
 
 ---
 
-## 6. Types of Data Binding in Angular?
+### 6. Types of Data Binding in Angular?
 
 - Interpolation
 - Property Binding
@@ -714,31 +714,31 @@ Data binding connects component data with HTML template.
 
 ---
 
-## 7. What is Interpolation?
+### 7. What is Interpolation?
 
 Interpolation displays TypeScript data inside HTML using `{{ }}`.
 
 ---
 
-## 8. What is Property Binding?
+### 8. What is Property Binding?
 
 Property binding binds component data to HTML element properties using `[ ]`.
 
 ---
 
-## 9. What is ngModel?
+### 9. What is ngModel?
 
 ngModel is a directive used for two-way data binding.
 
 ---
 
-## 10. Why FormsModule is required?
+### 10. Why FormsModule is required?
 
 FormsModule provides support for ngModel directive.
 
 ---
 
-## 11. Difference between Property Binding and Interpolation?
+### 11. Difference between Property Binding and Interpolation?
 
 | Property Binding | Interpolation |
 |---|---|
@@ -747,7 +747,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 12. Difference Between ngClass and ngStyle
+### 12. Difference Between ngClass and ngStyle
 
 | ngClass | ngStyle |
 |---|---|
@@ -757,7 +757,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 13. Difference between ngClass and class binding ?
+### 13. Difference between ngClass and class binding ?
 
 | ngClass | class binding |
 |---|---|
@@ -766,7 +766,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 14. Difference between ngStyle and style binding ?
+### 14. Difference between ngStyle and style binding ?
 
 | ngStyle | style binding |
 |---|---|
@@ -774,25 +774,25 @@ FormsModule provides support for ngModel directive.
 | Complex styling | Simple styling |
 
 
-## 15. What is Routing in Angular ?
+### 15. What is Routing in Angular ?
 
 Routing enables navigation between components/pages in a Single Page Application without reloading the browser.
 
 ---
 
-## 16. What is router-outlet ?
+### 16. What is router-outlet ?
 
 A placeholder directive where routed components are dynamically loaded.
 
 ---
 
-## 17. What is RouterLink ?
+### 17. What is RouterLink ?
 
 A directive used for navigation between routes.
 
 ---
 
-## 18. Difference between href and RouterLink ?
+### 18. Difference between href and RouterLink ?
 
 | href                   | RouterLink     |
 | ---------------------- | -------------- |
@@ -802,6 +802,6 @@ A directive used for navigation between routes.
 
 ---
 
-## 19. What is pathMatch: 'full' ?
+### 19. What is pathMatch: 'full' ?
 
 It tells Angular to match the complete URL path.
