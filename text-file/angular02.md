@@ -76,27 +76,18 @@ Angular updates only required components instead of reloading the entire page. T
 ## 3. How to Create Component?
 
 Angular CLI provides commands to generate components automatically.
-
----
-
-### Create Component
+Create Component
 
 ```bash
 ng generate component component_name
 
 ng g c component_name
 ```
----
-
-### Create Component Inside Folder
-
+Create Component Inside Folder
 ```bash
 ng g c admin/dashboard
 ```
-
----
-
-### Skip Test File
+Skip Test File
 
 ```bash
 ng g c user --skip-tests
