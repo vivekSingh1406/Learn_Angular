@@ -4,16 +4,13 @@
 A Component is the fundamental building block of an Angular application. In Angular, everything you see on the screen is made using components.
 - Examples:- Navbar, Sidebar, Login Form, Registration Form, Product Card, Dashboard, Footer, User Profile, Header
 
-* Real-Life Understanding
-Suppose you are creating an E-Commerce website. Instead of creating the whole UI in one file, Angular divides the UI into small reusable parts called components. Each section works independently.
+- Real-Life Understanding:- Suppose you are creating an E-Commerce website. Instead of creating the whole UI in one file, Angular divides the UI into small reusable parts called components. Each section works independently.
 
 ---
 
 ## Why Angular Uses Components?
 
-Angular follows:
-
-## Component-Based Architecture
+#### Component-Based Architecture
 
 This architecture helps developers:
 
@@ -24,7 +21,7 @@ This architecture helps developers:
 
 ---
 
-## Structure of a Component
+#### Structure of a Component
 
 A component mainly contains:
 
