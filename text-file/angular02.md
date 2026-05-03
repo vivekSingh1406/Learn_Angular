@@ -13,13 +13,10 @@ A Component is the fundamental building block of an Angular application. In Angu
 #### Component-Based Architecture
 
 This architecture helps developers:
-
 - Reuse code
 - Maintain applications easily
 - Build scalable applications
 - Separate logic properly
-
----
 
 #### Structure of a Component
 
@@ -42,13 +39,9 @@ Components are used because they make applications:
 - Scalable
 - Organized
 
----
+#### 1. Reusability
 
-### 1. Reusability
-
-The same component can be used multiple times.
-
-### Example
+The same component can be used multiple times. This saves development time.
 
 ```html
 <app-product-card></app-product-card>
@@ -56,13 +49,9 @@ The same component can be used multiple times.
 <app-product-card></app-product-card>
 ```
 
-This saves development time.
+#### 2. Separation of Concerns
 
----
-
-### 2. Separation of Concerns
-
-Angular separates:
+Angular separates. This keeps code clean.
 
 | Layer | Responsibility |
 |---|---|
@@ -70,11 +59,7 @@ Angular separates:
 | CSS | Design |
 | TypeScript | Logic |
 
-This keeps code clean.
-
----
-
-### 3. Easy Maintenance
+#### 3. Easy Maintenance
 
 Small components are easier to:
 - Debug
@@ -82,9 +67,7 @@ Small components are easier to:
 - Test
 - Understand
 
----
-
-### 4. Better Performance
+#### 4. Better Performance
 
 Angular updates only required components instead of reloading the entire page. This improves performance.
 
