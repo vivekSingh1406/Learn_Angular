@@ -2,32 +2,23 @@
 ## 1. What is Component in Angular?
 
 A Component is the fundamental building block of an Angular application. In Angular, everything you see on the screen is made using components.
+- Examples:- Navbar, Sidebar, Login Form, Registration Form, Product Card, Dashboard, Footer, User Profile, Header
 
-Examples- Navbar, Sidebar, Login Form, Registration Form, Product Card, Dashboard, Footer, User Profile, Header
----
-
-## Real-Life Understanding
-
-Suppose you are creating an E-Commerce website. Instead of creating the whole UI in one file, Angular divides the UI into small reusable parts called components. Each section works independently.
+- Real-Life Understanding:- Suppose you are creating an E-Commerce website. Instead of creating the whole UI in one file, Angular divides the UI into small reusable parts called components. Each section works independently.
 
 ---
 
 ## Why Angular Uses Components?
 
-Angular follows:
-
-## Component-Based Architecture
+#### Component-Based Architecture
 
 This architecture helps developers:
-
 - Reuse code
 - Maintain applications easily
 - Build scalable applications
 - Separate logic properly
 
----
-
-## Structure of a Component
+#### Structure of a Component
 
 A component mainly contains:
 
@@ -48,13 +39,9 @@ Components are used because they make applications:
 - Scalable
 - Organized
 
----
+#### 1. Reusability
 
-### 1. Reusability
-
-The same component can be used multiple times.
-
-### Example
+The same component can be used multiple times. This saves development time.
 
 ```html
 <app-product-card></app-product-card>
@@ -62,13 +49,9 @@ The same component can be used multiple times.
 <app-product-card></app-product-card>
 ```
 
-This saves development time.
+#### 2. Separation of Concerns
 
----
-
-### 2. Separation of Concerns
-
-Angular separates:
+Angular separates. This keeps code clean.
 
 | Layer | Responsibility |
 |---|---|
@@ -76,11 +59,7 @@ Angular separates:
 | CSS | Design |
 | TypeScript | Logic |
 
-This keeps code clean.
-
----
-
-### 3. Easy Maintenance
+#### 3. Easy Maintenance
 
 Small components are easier to:
 - Debug
@@ -88,9 +67,7 @@ Small components are easier to:
 - Test
 - Understand
 
----
-
-### 4. Better Performance
+#### 4. Better Performance
 
 Angular updates only required components instead of reloading the entire page. This improves performance.
 
@@ -100,26 +77,16 @@ Angular updates only required components instead of reloading the entire page. T
 
 Angular CLI provides commands to generate components automatically.
 
----
-
-### Create Component
-
 ```bash
 ng generate component component_name
 
 ng g c component_name
 ```
----
-
-### Create Component Inside Folder
-
+Create Component Inside Folder
 ```bash
 ng g c admin/dashboard
 ```
-
----
-
-### Skip Test File
+Skip Test File
 
 ```bash
 ng g c user --skip-tests
@@ -138,7 +105,7 @@ It tells Angular:
 - What CSS to use
 - What selector to use
 
-## How Angular Uses @Component?
+#### How Angular Uses @Component?
 
 When Angular application starts:
 
@@ -146,10 +113,6 @@ When Angular application starts:
 2. Reads metadata
 3. Creates component
 4. Renders UI
-
----
-
-### Syntax
 
 ```ts
 @Component({
@@ -161,10 +124,9 @@ When Angular application starts:
 ---
 
 
-## 1. How to Declare Variable / State in Component?
+## 5. How to Declare Variable / State in Component?
 
 In Angular, variables are declared inside the component class. Angular uses TypeScript, so variables are declared using TypeScript syntax.
-
 
 These variables store:
 - Data
@@ -175,7 +137,7 @@ These variables store:
 ---
 
 
-## 2. What is Data Binding?
+## 6. What is Data Binding?
 
 Data binding is a technique used in frameworks like Angular to connect your application data (component) with the user interface (HTML view) ** It keeps your data and UI in sync automatically.**
 
@@ -183,8 +145,7 @@ It allows communication between:
 - UI and Component
 - Component and UI
 
-## Why Data Binding is Important?
-
+### Why Data Binding is Important?
 
 Without data binding:
 - You would manually update the UI when data changes
@@ -194,7 +155,7 @@ With data binding:
 - Changes in data reflect in UI automatically
 - User actions update data automatically
 
-## One-Way Data Binding
+### One-Way Data Binding
 Data flows in one direction only — either from component → view or view → component.
 
 1. Interpolation ({{ }})
@@ -209,7 +170,7 @@ Also component → view.
 Sends data from the view to the component when an event occurs.
 view → component
 
-## Two-Way Data Binding
+### Two-Way Data Binding
 Data flows both ways (component ↔ view).
 
 Using ngModel
@@ -218,13 +179,13 @@ Requires importing FormsModule
 
 ---
 
-## 4 What is interpolation & how to use interpolation in angular ?
+## 7 What is interpolation & how to use interpolation in angular ?
 
 Interpolation means binding data from the component to the view (HTML) using double curly braces. The expression inside {{ }} is evaluated by Angular, and its result is displayed in the UI.
 
 
 
-## 1 What is Directive ?
+## 8 What is Directive ?
 
 A Directive in Angular is a special instruction that helps Angular modify the behavior, appearance, or structure of HTML elements. Directives are one of the most important features of Angular because they make web pages dynamic.
 
@@ -235,7 +196,7 @@ Using directives, we can:
 - Add custom behavior
 - Manipulate DOM easily
 
-# Why Directives Are Important ?
+### Why Directives Are Important ?
 
 Without directives:
 - Web pages become static
@@ -666,22 +627,22 @@ Benefits of RouterLink
 
 
 ---
-# Interview Questions
+## Interview Questions
 ---
 
-## 1. What is Component in Angular?
+### 1. What is Component in Angular?
 
 A component is the basic building block of Angular applications that controls part of the UI.
 
 ---
 
-## 2. What is selector?
+### 2. What is selector?
 
 Selector is a custom HTML tag used to render a component.
 
 ---
 
-## 3. Difference between template and templateUrl?
+### 3. Difference between template and templateUrl?
 
 | template | templateUrl |
 |---|---|
@@ -689,7 +650,7 @@ Selector is a custom HTML tag used to render a component.
 
 ---
 
-## 4. Why Components are Important?
+### 4. Why Components are Important?
 
 Components help in:
 - Reusability
@@ -699,13 +660,13 @@ Components help in:
 
 ---
 
-## 5. What is Data Binding?
+### 5. What is Data Binding?
 
 Data binding connects component data with HTML template.
 
 ---
 
-## 6. Types of Data Binding in Angular?
+### 6. Types of Data Binding in Angular?
 
 - Interpolation
 - Property Binding
@@ -714,31 +675,31 @@ Data binding connects component data with HTML template.
 
 ---
 
-## 7. What is Interpolation?
+### 7. What is Interpolation?
 
 Interpolation displays TypeScript data inside HTML using `{{ }}`.
 
 ---
 
-## 8. What is Property Binding?
+### 8. What is Property Binding?
 
 Property binding binds component data to HTML element properties using `[ ]`.
 
 ---
 
-## 9. What is ngModel?
+### 9. What is ngModel?
 
 ngModel is a directive used for two-way data binding.
 
 ---
 
-## 10. Why FormsModule is required?
+### 10. Why FormsModule is required?
 
 FormsModule provides support for ngModel directive.
 
 ---
 
-## 11. Difference between Property Binding and Interpolation?
+### 11. Difference between Property Binding and Interpolation?
 
 | Property Binding | Interpolation |
 |---|---|
@@ -747,7 +708,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 12. Difference Between ngClass and ngStyle
+### 12. Difference Between ngClass and ngStyle
 
 | ngClass | ngStyle |
 |---|---|
@@ -757,7 +718,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 13. Difference between ngClass and class binding ?
+### 13. Difference between ngClass and class binding ?
 
 | ngClass | class binding |
 |---|---|
@@ -766,7 +727,7 @@ FormsModule provides support for ngModel directive.
 
 ---
 
-## 14. Difference between ngStyle and style binding ?
+### 14. Difference between ngStyle and style binding ?
 
 | ngStyle | style binding |
 |---|---|
@@ -774,25 +735,25 @@ FormsModule provides support for ngModel directive.
 | Complex styling | Simple styling |
 
 
-## 15. What is Routing in Angular ?
+### 15. What is Routing in Angular ?
 
 Routing enables navigation between components/pages in a Single Page Application without reloading the browser.
 
 ---
 
-## 16. What is router-outlet ?
+### 16. What is router-outlet ?
 
 A placeholder directive where routed components are dynamically loaded.
 
 ---
 
-## 17. What is RouterLink ?
+### 17. What is RouterLink ?
 
 A directive used for navigation between routes.
 
 ---
 
-## 18. Difference between href and RouterLink ?
+### 18. Difference between href and RouterLink ?
 
 | href                   | RouterLink     |
 | ---------------------- | -------------- |
@@ -802,6 +763,6 @@ A directive used for navigation between routes.
 
 ---
 
-## 19. What is pathMatch: 'full' ?
+### 19. What is pathMatch: 'full' ?
 
 It tells Angular to match the complete URL path.
