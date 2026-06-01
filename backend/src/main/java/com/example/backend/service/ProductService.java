@@ -2,7 +2,6 @@ package com.example.backend.service;
 
 
 import com.example.backend.dto.ProductDTO;
-import com.example.backend.entity.Product;
 
 import java.util.List;
 
